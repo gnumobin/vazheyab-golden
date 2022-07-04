@@ -665,10 +665,13 @@ header nav ul li > a {
 }
 header button#themeEditor {
   all: unset;
-  background-color: #f5f6fa;
   padding: 0.5rem;
   border-radius: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 15px;
 }
 header button#themeEditor i {
   font-size: 1.1rem;
@@ -848,6 +851,10 @@ footer > .container * {
   color: #1cb0f6;
 }
 
+body.dark {
+  background-color: black;
+  filter: rightness(0.5);
+}
 section.search-sec {
   margin-top: 2rem;
   margin-bottom: 2rem;

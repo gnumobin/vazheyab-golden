@@ -213,7 +213,8 @@ function My_JavaScript() {
   }
   // After Clicked Edit Website theme (default == go to the dark theme)
   function afterEditTheme() {
-    modal("sendInformationModal", "متاسفیم!", "فعلا در دسترس نیست");
+    modal("sendInformationModal", "سلام!", "این آپشن آزمایشی هست بنابرین زیاد کیفیت خوبی نداره");
+    document.querySelector("body").classList.toggle("dark")
   }
   // after clicked in share btn for share link
   function afterShare() {
