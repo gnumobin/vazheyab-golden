@@ -377,17 +377,15 @@ details p {
 }
 
 section.share-website {
-  margin: auto;
   opacity: 0;
   background-color: rgb(18, 15, 62);
-  width: 50vw;
-  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
   transition: 0.5s opacity;
   position: fixed;
   z-index: -100;
-  right: 20%;
-  bottom: 30%;
-  border-radius: 7px;
+  inset: 0;
   text-align: center;
 }
 section.share-website * {
@@ -419,13 +417,8 @@ section.share-website i.fa-clipboard {
 section.share-website .float {
   padding: 0.5rem;
 }
-section.share-website .float h4 {
-  display: block;
-  position: absolute;
-  top: 10%;
-  left: 0%;
-}
 section.share-website .float i {
+  margin-top: 0.5rem;
   margin-left: 5rem;
   color: red;
 }
@@ -437,10 +430,10 @@ section.share-website .share-buttons {
   gap: 1.5rem;
 }
 section.share-website i {
-  transition: 0.1s transform;
+  transition: 0.5s transform;
 }
 section.share-website i:hover {
-  transform: translateY(-10px) scale(1.2);
+  transform: scale(2) rotate(360deg) rotateX(360deg);
 }
 
 #not-found-container {

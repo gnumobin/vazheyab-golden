@@ -160,19 +160,21 @@ function My_JavaScript() {
 
       if (query === "") {
         modal("sendInformationModal", "ای بابا", "لطفا ی چیزی جستجو کن");
-
-        if (counter > 3) {
-          modal(
-            "sendInformationModal",
-            "سلام خوشگله",
-            "میبینم که داری با سایت حال میکنی ، نمیخوای حمایت کنی؟"
-          );
-        }
       } else {
         const container = $.querySelector(".output .grid");
         container.innerHTML = "";
         spinner.style.display = "block";
         api.create(query, spinner);
+      }
+
+      if (counter > 3) {
+        modal(
+          "sendInformationModal",
+          "سلام خوشگله",
+          "میبینم که داری با سایت حال میکنی ، نمیخوای حمایت کنی؟"
+        );
+
+        counter = 0;
       }
 
       $.querySelector(".search-box").reset();
