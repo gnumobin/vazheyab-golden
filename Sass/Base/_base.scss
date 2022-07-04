@@ -1,0 +1,91 @@
+::selection,
+::-moz-selection {
+  background-color: orangered;
+  color: black;
+}
+ul,
+button,
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 2rem;
+  margin: auto;
+}
+html {
+  direction: rtl;
+}
+body {
+  font-family: vazir;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+  background: snow;
+}
+* {
+  color: #2e4051;
+  font-size: 100%;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.15;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.15;
+}
+h4 {
+  font-size: 1.4rem;
+  line-height: 34.38px;
+  font-weight: 400;
+}
+h5 {
+  font-size: 1.2rem;
+  line-height: 34.38px;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+  @extend %button;
+}
+strong {
+  font-weight: 900;
+  font-size: 1.2rem;
+  list-style: 28px;
+}
+details {
+  summary {
+    cursor: pointer;
+
+    padding: 1rem;
+
+    text-align: center;
+
+    border: 1.5px solid #bdc3c731;
+    border-radius: 5px;
+  }
+  p {
+    color: teal;
+    opacity: 1;
+  }
+}
+
+.observer-anime {
+  opacity: 0;
+
+  transition: 0.5s;
+  transition-property: opacity;
+}
+.show {
+  opacity: 1;
+}

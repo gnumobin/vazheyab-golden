@@ -1,0 +1,165 @@
+%float {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    display: grid;
+    justify-content: center;
+  }
+}
+%inside-fifty-width {
+  > * {
+    width: 50%;
+  }
+}
+%inside-space-three {
+  @include displayFlex(column, initial, initial, 3rem);
+}
+
+.search-box {
+  position: relative;
+  input {
+    padding: 1rem 0.6rem;
+    width: 70%;
+    border: 3px solid #f1f4f7;
+    border-radius: 25px;
+    background-color: #ced9e3;
+  }
+  // i.fa.fa-search {
+  //   position: absolute;
+  //   left: 33%;
+  //   top: 22px;
+  //   cursor: pointer;
+  // }
+  button[type="submit"] {
+    all: unset;
+    position: absolute;
+    left: 17%;
+    top: 23px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0) !important;
+  }
+}
+
+// Create Button Components
+%button {
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 18px;
+  font-size: 1.2rem;
+}
+%blue-button {
+  background-color: #1cb0f6;
+  box-shadow: 0px 5px 0px #099ee3;
+  color: white;
+}
+%gray-button {
+  background-color: #f1f4f7;
+  box-shadow: 0px 5px 0px #ced9e3;
+}
+%gray-button {
+  background-color: #f1f4f7;
+  box-shadow: 0px 5px 0px #ced9e3;
+}
+%navy-button {
+  background: #273645;
+  box-shadow: 0px 4.3067px 0px #1a242d;
+  color: snow;
+}
+
+%description-box {
+  position: relative;
+  border: 3px solid #ced9e3;
+  border-radius: 35px;
+  padding: 1rem 2rem;
+  @include displayFlex(initial, initial, initial, 2rem);
+
+  div.icon {
+    position: absolute;
+
+    border-radius: 25px 25px 25px 0px;
+    display: inline-block;
+    padding: 1rem;
+    top: -31px;
+    right: -15px;
+
+    img {
+      @include displayFlex(initial, center, center, 0);
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  div.content {
+    @include displayFlex(column, center, center, 1rem);
+
+    > h4 {
+      margin-top: 2rem;
+    }
+    > p {
+      text-align: justify;
+      line-height: 21.88px;
+      font-size: 0.9rem;
+      opacity: 0.75;
+    }
+  }
+}
+
+%social-media-section {
+  div.rect {
+    position: relative;
+
+    div.gray {
+      position: absolute;
+      background-color: #f1f4f7;
+      width: 100%;
+      height: 200px;
+      border-radius: 65px;
+    }
+    div.blue {
+      width: 100%;
+      @extend %float;
+      align-items: center;
+      justify-content: space-around;
+      background: url(../../Image/img/halftone.png), #3ebcf7;
+      border-radius: 75px;
+      transform: matrix(1, -0.04, 0.03, 1, 0, 0);
+      padding: 1rem;
+
+      .right {
+        justify-content: initial !important;
+
+        h2 {
+          text-shadow: 0px 5px 0px rgba(0, 0, 0, 0.25);
+          transform: rotate(-3.18deg);
+          font-weight: 400 !important;
+          line-height: 78px;
+        }
+        p {
+          opacity: 0.9;
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 38px;
+          transform: rotate(-3.79deg);
+        }
+      }
+      .left {
+        display: flex;
+        justify-content: left;
+        img {
+          width: 70%;
+          // width: 150px;
+          // height: 207px;
+        }
+      }
+    }
+  }
+  i.fab {
+    background-color: #f1f4f7;
+    color: #2e4051 !important;
+    padding: 0.8rem 1rem;
+    box-shadow: 0px 4px 0px #d1d9e0;
+    border-radius: 16px;
+    font-size: 2rem;
+  }
+}

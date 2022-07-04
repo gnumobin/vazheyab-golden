@@ -1,0 +1,69 @@
+section.share-website {
+  margin: auto;
+  opacity: 0;
+
+  background-color: rgba(18, 15, 62,1);
+  width: 50vw;
+  padding: 2rem;
+  transition: 0.5s opacity;
+
+  * {
+    padding: 0.5rem;
+  }
+
+  position: fixed;
+  z-index: -100;
+  right: 20%;
+  bottom: 30%;
+
+  border-radius: 7px;
+
+  text-align: center;
+
+  h4 {
+    text-align: right;
+    margin-right: 5rem;
+  }
+  span > span,
+  h4 {
+    color: snow;
+    display: block;
+    margin-top: 0.5rem;
+  }
+  :is(i.fa, i.fab) {
+    font-size: 4rem;
+    cursor: pointer;
+  }
+  i.fa-telegram {
+    color: #7ed6df;
+  }
+  i.fa-whatsapp {
+    color: lime;
+  }
+  i.fa-clipboard {
+    color: snow;
+  }
+  .float {
+    @extend %float;
+    padding: 0.5rem;
+    h4 {
+      display: block;
+      position: absolute;
+      top: 10%;
+      left: 0%;
+    }
+    i {
+      margin-left: 5rem;
+      color: red;
+    }
+  }
+  .share-buttons {
+    @include displayFlex(row, space-around, center, 1.5rem);
+  }
+  i {
+    transition: 0.1s transform;
+  }
+  i:hover {
+    transform: translateY(-10px) scale(1.2);
+  }
+}

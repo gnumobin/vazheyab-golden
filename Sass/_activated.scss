@@ -1,0 +1,36 @@
+.desktop-header {
+  li:hover {
+    * {
+      color: #1cb0f6;
+      opacity: 1 !important;
+    }
+  }
+}
+button {
+  transition: 0.09s box-shadow;
+}
+button:hover {
+  box-shadow: 0 0 0 0 black !important;
+}
+button#themeEditor:hover {
+  background-color: #1e2a35b9;
+  * {
+    color: rgb(190, 190, 190);
+  }
+}
+.follow-me {
+  i.fab:hover {
+    opacity: 1;
+    color: white;
+    background-color: #e84393;
+  }
+}
+
+a:hover {
+  cursor: pointer;
+}
+summary:hover {
+  transition: 0.3s;
+  opacity: 1;
+  border: 1px solid deeppink !important;
+}

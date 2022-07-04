@@ -1,0 +1,58 @@
+#not-found-container {
+  display: flex;
+
+  > .container:nth-child(1) {
+    position: absolute;
+    z-index: -1;
+
+    .top-background {
+      position: absolute;
+      z-index: -1;
+
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+
+      .blue-background {
+        position: absolute;
+        z-index: -1;
+
+        background-color: #1cb0f6;
+        box-shadow: 0 0 2px 10px #1697d3;
+        filter: blur(256.29px);
+
+        padding: 8rem;
+      }
+    }
+  }
+  > .container:nth-child(2) {
+    @include displayFlex(column, center, center, 5rem);
+  }
+
+  div.knob {
+    button {
+      margin-left: -6px;
+    }
+    button:nth-child(1) {
+      @extend %gray-button;
+      border-radius: 0 27.3231px 27.3231px 0;
+    }
+    button:nth-child(2) {
+      @extend %blue-button;
+      border-radius: 27.3231px 0px 0px 27.3231px;
+    }
+  }
+  h1 {
+    font-size: 5rem !important;
+  }
+  p {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 59px;
+
+    color: #2e4051;
+
+    opacity: 0.75;
+  }
+}
