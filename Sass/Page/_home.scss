@@ -42,6 +42,7 @@
     right: 0;
     z-index: 9;
     transition: 0.4s width;
+    border-radius: 0px;
 
     ul {
       white-space: nowrap;
@@ -49,10 +50,8 @@
       width: 0vw;
 
       overflow: hidden;
-      border-top-left-radius: 25px;
-      border-bottom-left-radius: 25px;
 
-      transition: 0.6s width;
+      transition: 0.2s width;
 
       background-color: #ecf0f1;
       position: fixed;
@@ -87,6 +86,10 @@
 }
 
 header {
+  i {
+    margin-left: 0.4rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
   nav {
     padding: 1rem 0;
     @extend %float;
@@ -344,4 +347,7 @@ footer {
 .active {
   color: #1cb0f6;
   opacity: 1;
+  i {
+    color: #1cb0f6;
+  }
 }

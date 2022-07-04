@@ -613,14 +613,13 @@ section.share-website i:hover {
   right: 0;
   z-index: 9;
   transition: 0.4s width;
+  border-radius: 0px;
 }
 .mobile-header .mobile-menu ul {
   white-space: nowrap;
   width: 0vw;
   overflow: hidden;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  transition: 0.6s width;
+  transition: 0.2s width;
   background-color: #ecf0f1;
   position: fixed;
   top: 0;
@@ -647,6 +646,10 @@ section.share-website i:hover {
   display: inline-block;
 }
 
+header i {
+  margin-left: 0.4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
 header nav {
   padding: 1rem 0;
   align-items: center;
@@ -840,6 +843,9 @@ footer > .container * {
 .active {
   color: #1cb0f6;
   opacity: 1;
+}
+.active i {
+  color: #1cb0f6;
 }
 
 section.search-sec {
