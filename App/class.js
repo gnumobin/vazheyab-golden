@@ -9,8 +9,6 @@ class Transmitter {
       .then((response) => {
         this.container.innerHTML = response;
         My_JavaScript();
-
-        observer.observing();
       });
   }
 }

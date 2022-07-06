@@ -354,14 +354,3 @@ footer {
     color: #1cb0f6;
   }
 }
-
-
-
-body.dark {
-  background-color: black;
-  filter: rightness(0.5);
-
-  * {
-    // color: gray !important;
-  }
-}

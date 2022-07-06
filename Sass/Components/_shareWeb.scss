@@ -1,10 +1,10 @@
 section.share-website {
-  // margin: auto;
+  margin: auto;
   opacity: 0;
 
-  background-color: rgba(18, 15, 62, 1);
-  width: 100vw;
-  height: 100vh;
+  background-color: #44475a;
+  width: 50vw;
+  height: 50vh;
   padding: 1rem;
   transition: 0.5s opacity;
 
@@ -54,9 +54,9 @@ section.share-website {
     @include displayFlex(row, space-around, center, 1.5rem);
   }
   i {
-    transition: 0.5s transform;
+    transition: 0.35s transform;
   }
   i:hover {
-    transform: scale(2) rotate(360deg) rotateX(360deg);
+    transform: scale(1.5);
   }
 }

@@ -81,12 +81,25 @@ details {
   }
 }
 
-.observer-anime {
-  opacity: 0;
-
-  transition: 0.5s;
-  transition-property: opacity;
-}
-.show {
-  opacity: 1;
+.dark {
+  background-color: #282a36;
+  color: #f8f8f2;
+  * {
+    color: #f8f8f2;
+  }
+  input , textarea {
+    background-color: #44475a;
+    color: black;
+  }
+  .knob * {
+    color: black !important;
+  }
+  .fixed-wave-bg {
+    visibility: hidden;
+  }
+  .output {
+    * {
+      color: #282a36;
+    }
+  }
 }

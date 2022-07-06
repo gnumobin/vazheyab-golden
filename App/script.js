@@ -210,34 +210,8 @@ function My_JavaScript() {
   }
   // After Clicked Edit Website theme (default == go to the dark theme)
   function afterEditTheme() {
-    // modal("sendInformationModal", "سلام!", "این آپشن آزمایشی هست بنابرین زیاد کیفیت خوبی نداره");
-    // document.querySelector("body").classList.toggle("dark")
-    const R = document.querySelector(":root");
-    const TOPBG = document.querySelector(".fixed-wave-bg");
-    const protectButton = document.querySelectorAll(".knob");
-    const inputs = document.querySelectorAll("input");
-
-    // Edit Main Theme
-    R.style.setProperty("--light-bg-color", "#282a36");
-    R.style.setProperty("--light-font-color", "#f8f8f2");
-
-    // Edit Button For Fixing Bugs
-    if (TOPBG) {
-      TOPBG.style.visibility = "hidden";
-    }
-    if (protectButton) {
-      protectButton.forEach((index, number) => {
-        protectButton[number].style.setProperty(
-          "--light-font-color",
-          "#44475a"
-        );
-      });
-    }
-
-    // Edit Input PlaceHolders
-    inputs.forEach((index, number) => {
-      inputs[number].style.backgroundColor = "#44475a";
-    });
+    const body = document.querySelector("body")
+    body.classList.toggle("dark")
   }
   // after clicked in share btn for share link
   function afterShare() {
