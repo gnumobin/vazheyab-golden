@@ -114,6 +114,15 @@ table {
   font-style: normal;
   font-display: swap;
 }
+:root {
+  --light-bg-color: snow;
+  --dark-bg-color: black;
+  --light-font-color: #2e4051;
+  --dark-font-color: #ecf0f1;
+  --light-mobile-menu-color: #ecf0f1;
+  --light-mobile-menu-color: #333;
+}
+
 section.who-iam, section.what-word, .follow-me .left, .follow-me, section.search-sec div.helper, footer > .container, section.brief, section.ocean, section.welcome, header nav ul, header nav, .mobile-header .float, section.share-website .float, section.social-media div.rect div.blue {
   display: flex;
   justify-content: space-between;
@@ -310,11 +319,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  background: snow;
+  background: var(--light-bg-color);
 }
 
 * {
-  color: #2e4051;
+  color: var(--light-font-color);
   font-size: 100%;
   font-family: inherit;
   box-sizing: border-box;
@@ -928,6 +937,7 @@ section.result .output .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  width: 100%;
 }
 section.result .output .grid .words {
   width: 100%;

@@ -156,31 +156,3 @@ class Clipboard {
     }
   }
 }
-
-class Observer {
-  observing() {
-    const section = $.querySelectorAll(".observer-anime");
-
-    if ("MutationObserver" in window) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            entry.target.classList.toggle("show", entry.isIntersecting);
-          });
-        },
-        {
-          threshold: 0,
-        }
-      );
-      section.forEach((item) => {
-        observer.observe(item);
-      });
-    } else {
-      section.forEach((sec) => {
-        if (sec) {
-          sec.classList.remove("observer-anime");
-        }
-      });
-    }
-  }
-}

@@ -3,6 +3,7 @@
   background-color: orangered;
   color: black;
 }
+
 ul,
 button,
 img {
@@ -26,10 +27,10 @@ body {
   justify-content: space-between;
   align-items: stretch;
 
-  background: snow;
+  background: var(--light-bg-color);
 }
 * {
-  color: #2e4051;
+  color: var(--light-font-color);
   font-size: 100%;
   font-family: inherit;
   box-sizing: border-box;
