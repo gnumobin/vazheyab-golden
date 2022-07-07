@@ -396,6 +396,55 @@ details p {
   color: #282a36;
 }
 
+:root {
+  --cofee-color: gray;
+}
+
+.loader {
+  width: 48px;
+  height: 40px;
+  margin-top: 30px;
+  display: inline-block;
+  position: relative;
+  background: var(--cofee-color);
+  border-radius: 15% 15% 35% 35%;
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 45px;
+  top: 8px;
+  border: 4px solid var(--cofee-color);
+  width: 16px;
+  height: 20px;
+  border-radius: 0 4px 4px 0;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  color: var(--cofee-color);
+  top: -15px;
+  left: 11px;
+  box-sizing: border-box;
+  animation: animloader 1s ease infinite;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 2px 0px rgba(255, 0, 0, 0), 12px 0px rgb(150, 150, 150), 20px 0px rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 2px -5px rgba(150, 150, 150, 0.5), 12px -3px rgba(150, 150, 150, 0.5), 20px -2px rgba(150, 150, 150, 0.6);
+  }
+  100% {
+    box-shadow: 2px -8px rgba(150, 150, 150, 0), 12px -5px rgba(150, 150, 150, 0), 20px -5px rgba(150, 150, 150, 0);
+  }
+}
 section.share-website {
   margin: auto;
   opacity: 0;
@@ -1049,19 +1098,6 @@ section.social-media * {
   color: rgba(255, 20, 145, 0.7);
 }
 
-@keyframes loader {
-  0% {
-    transform: scaleY(0.1);
-  }
-  50% {
-    transform: scaleY(1);
-    background: deeppink;
-  }
-  100% {
-    transform: scaleY(0.1);
-    background: transparent;
-  }
-}
 :is(section.what-word, section.who-iam) p > strong {
   display: inline-block;
   padding: 1rem 0;
