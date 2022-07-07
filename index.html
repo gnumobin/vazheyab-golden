@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="مبین قائمی , mobin ghaemi" />
+    <meta name="desc" content="غواصی توی دنیا واژه های زیبای فارسی" />
+    <meta
+      name="keywords"
+      content="واژه , فارسی , پارسی , فردوسی , مبین قائمی"
+    />
 
-    <meta name="author" content="مبین قائمی , mobin ghaemi">
-    <meta name="desc" content="غواصی توی دنیا واژه های زیبای فارسی">
-    <meta name="keywords" content="واژه , فارسی , پارسی , فردوسی , مبین قائمی">
-
-    <meta name="theme-color" content="#fff">
+    <meta name="theme-color" content="#fff" />
 
     <meta name="robots" content="follow" />
     <meta name="googlebot" content="follow" />
@@ -20,322 +22,367 @@
 
     <title>واژه یاب طلایی</title>
 
-    <link rel="shortcut icon" href="../Image/img/ferdowsi.png" type="image/x-icon">
-    <link rel="stylesheet" href="./font-awesome/css/all.css">
-    <link rel="stylesheet" href="./Style/style.css">
+    <link
+      rel="shortcut icon"
+      href="../Image/img/ferdowsi.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./font-awesome/css/all.css" />
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
 
-</head>
-
-<body id="body" class="">
-
+  <body id="body" class="">
     <main class="container">
-        <div class="overlay"></div>
-        <div class="modal " id="sendInformationModal">
-            <div class="modal-inner">
-                <div>
-                    <h1></h1>
-                    <span class="close-modal-btn"></span>
-                </div>
-                <div id="textBody">
-
-                </div>
-            </div>
+      <div class="overlay"></div>
+      <div class="modal" id="sendInformationModal">
+        <div class="modal-inner">
+          <div>
+            <h1></h1>
+            <span class="close-modal-btn"></span>
+          </div>
+          <div id="textBody"></div>
         </div>
+      </div>
     </main>
 
     <main class="container">
-        <section class="share-website">
+      <section class="share-website">
+        <div class="float">
+          <h4>اشتراک گذاری از طریق :</h4>
+          <i id="closeSec" class="fa fa-close"></i>
+        </div>
+        <div class="share-buttons">
+          <span id="clipboard">
+            <i class="fa fa-clipboard"></i>
+            <span>تخته رسم</span>
+          </span>
+          <span id="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>واتساپ</span>
+          </span>
+          <span id="telegram">
+            <i class="fab fa-telegram"></i>
+            <span>تلگرام</span>
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <header class="mobile-header">
+      <nav>
+        <div class="mobile-menu">
+          <ul>
             <div class="float">
-                <h4>اشتراک گذاری از طریق :</h4>
-                <i id="closeSec" class="fa fa-close"></i>
+              <h5>واژه</h5>
+              <button id="closeMenu"><i class="fa fa-close"></i></button>
             </div>
-            <div class="share-buttons">
-                <span id="clipboard">
-                    <i class="fa fa-clipboard"></i>
-                    <span>تخته رسم</span>
-                </span>
-                <span id="whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>واتساپ</span>
-                </span>
-                <span id="telegram">
-                    <i class="fab fa-telegram"></i>
-                    <span>تلگرام</span>
-                </span>
-            </div>
-        </section>
+
+            <hr />
+
+            <li>
+              <a id="themeEditor">
+                <i class="fa fa-sun"></i>
+                <span>حالت روشن</span>
+              </a>
+            </li>
+
+            <hr />
+
+            <li>
+              <a id="homeButton">
+                <i class="fa fa-home"></i>
+                <span>خانه</span>
+              </a>
+            </li>
+            <li>
+              <a id="searchButton">
+                <i class="fa fa-search"></i>
+                <span>جستجو</span>
+              </a>
+            </li>
+            <hr />
+
+            <li>
+              <a id="aboutButton">
+                <i class="fa fa-users"></i>
+                <span>درباره ما</span>
+              </a>
+            </li>
+            <li>
+              <a
+                id="protectButton"
+                target="_blank"
+                href="https://idpay.ir/protect-word"
+              >
+                <i class="fa fa-wallet"></i>
+                <span>حمایت مالی</span>
+              </a>
+            </li>
+            <hr />
+
+            <li>
+              <a id="contactButton">
+                <i class="fa fa-phone"></i>
+                <span>تماس با ما</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="left">
+          <button id="openMenu"><i class="fa fa-bars"></i></button>
+        </div>
+        <div class="right">
+          <h4 class="website-text-logo">واژه</h4>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container header-container">
+      <header class="desktop-header">
+        <nav>
+          <div class="right">
+            <h4 class="website-text-logo">واژه</h4>
+          </div>
+          <div class="middle">
+            <ul>
+              <li>
+                <a id="homeButton">
+                  <i class="fa fa-home"></i>
+                  خانه
+                </a>
+              </li>
+              <li>
+                <a id="searchButton">
+                  <i class="fa fa-search"></i>
+                  جستجو
+                </a>
+              </li>
+              <li>
+                <a id="aboutButton">
+                  <i class="fa fa-user"></i>
+                  درباره
+                </a>
+              </li>
+              <li>
+                <a
+                  id="protectButton"
+                  target="_blank"
+                  href="https://idpay.ir/protect-word"
+                >
+                  <i class="fa fa-shield"></i>
+                  حمایت مالی
+                </a>
+              </li>
+              <li>
+                <a id="contactButton">
+                  <i class="fa fa-phone"></i>
+                  تماس با ما
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="left">
+            <button id="themeEditor">
+              <i class="fa fa-sun"></i>
+            </button>
+          </div>
+        </nav>
+      </header>
     </main>
 
     <main id="switcherContainer">
+      <main class="container">
+        <section class="welcome">
+          <div class="right">
+            <h1>
+              جستجو در میان
+              <br />
+              هزاران واژه
+            </h1>
+            <p class="desc-text">واژه ، موتور جستجوی نویسندگان</p>
+            <form class="search-box" id="searchBoxHome">
+              <input type="search" placeholder="جستجو" />
+              <button type="submit" style="background-color: #fff">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="left">
+            <img
+              id="ferdowsi"
+              src="../Image/img/ferdowsi.png"
+              alt="ferdowsi pictrue"
+              loading="lazy"
+            />
+            <canvas
+              width="50px"
+              height="300px"
+              id="windowShade"
+              loading="lazy"
+            ></canvas>
+          </div>
+        </section>
+      </main>
 
-        <header class="mobile-header">
-            <nav>
-                <div class="mobile-menu">
-                    <ul>
+      <main class="container">
+        <section class="ocean">
+          <div class="right">
+            <img
+              src="../Image/img/writing.png"
+              alt="a human search word"
+              loading="lazy"
+            />
+          </div>
+          <div class="left">
+            <img
+              src="../Image/img/message.png"
+              alt="beautiful message"
+              loading="lazy"
+            />
+          </div>
+        </section>
+      </main>
 
-                        <div class="float">
-                            <h5>واژه</h5>
-                            <button id="closeMenu"><i class="fa fa-close"></i></button>
-                        </div>
+      <main class="container">
+        <main class="downer-bg">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </main>
+      </main>
 
-                        <hr>
-
-                        <li><a id="themeEditor">
-                                <i class="fa fa-sun"></i>
-                                <span>حالت روشن</span>
-                            </a></li>
-
-                        <hr>
-
-                        <li><a class="active" id="homeButton">
-                                <i class="fa fa-home"></i>
-                                <span>خانه</span>
-                            </a></li>
-                        <li><a id="searchButton">
-                                <i class="fa fa-search"></i>
-                                <span>جستجو</span>
-                            </a></li>
-                        <hr>
-
-                        <li><a id="aboutButton">
-                                <i class="fa fa-users"></i>
-                                <span>درباره ما</span>
-                            </a></li>
-                        <li><a id="protectButton" target="_blank" href="https://idpay.ir/protect-word">
-                                <i class="fa fa-wallet"></i>
-                                <span>حمایت مالی</span>
-                            </a>
-                        </li>
-                        <hr>
-
-                        <li><a id="contactButton">
-                                <i class="fa fa-phone"></i>
-                                <span>تماس با ما</span>
-                            </a></li>
-                        </ul>
-                </div>
-
-                <div class="left">
-                    <button id="openMenu"><i class="fa fa-bars"></i></button>
-                </div>
-                <div class="right">
-                    <h4 class="website-text-logo">واژه</h4>
-                </div>
-
-            </nav>
-        </header>
-
-        <main class="container">
-            <header class="desktop-header">
-                <nav>
-                    <div class="right">
-                        <h4 class="website-text-logo">واژه</h4>
+      <main class="container">
+        <section class="brief">
+          <div class="right">
+            <h1>با واژه میتونی...</h1>
+            <p>
+              خیلی راحت و سریع بین فرهنگ های مختلف
+              <br />
+              جستجو کنی و متن بهتری بنویسی
+            </p>
+            <div class="knob">
+              <button id="startSearch">شروع جستجو</button>
+              <button id="moreInfo">اطلاعات بیشتر</button>
+            </div>
+          </div>
+          <div class="left">
+            <table>
+              <!-- Row one -->
+              <tr>
+                <td>
+                  <div class="description-box">
+                    <div class="star icon">
+                      <img src="../Image/icon/star.svg" alt="star icon" />
                     </div>
-                    <div class="middle">
-                        <ul>
-                            <li><a class="active" id="homeButton">
-                                <i class="fa fa-home"></i>
-                                خانه
-                            </a></li>
-                            <li><a id="searchButton">
-                                <i class="fa fa-search"></i>
-                                جستجو
-                            </a></li>
-                            <li><a id="aboutButton">
-                                <i class="fa fa-user"></i>
-                                درباره
-                            </a></li>
-                            <li><a id="protectButton" target="_blank" href="https://idpay.ir/protect-word">
-                                <i class="fa fa-shield"></i>
-                                حمایت مالی
-                            </a></li>
-                            <li><a id="contactButton">
-                                <i class="fa fa-phone"></i>
-                                تماس با ما
-                            </a></li>
-                        </ul>
+                    <div class="content">
+                      <h4>انتخاب بهترین واژه</h4>
+                      <p>
+                        استفاده از منابعی چون فرهنگ با بهترین طیفی و واژه‌نامه
+                        سره نامه باشید انتخاب را داشته
+                      </p>
                     </div>
-                    <div class="left">
-                        <button id="themeEditor">
-                            <i class="fa fa-sun"></i>
-                        </button>
+                  </div>
+                </td>
+                <td>
+                  <div class="description-box">
+                    <div class="quill icon">
+                      <img src="../Image/icon/quill.svg" alt="Quill icon" />
                     </div>
-                </nav>
-            </header>
-        </main>
-
-        <main class="container">
-            <section class="welcome">
-                <div class="right">
-                    <h1>
-                        جستجو در میان
-                        <br />
-                        هزاران واژه
-                    </h1>
-                    <p class="desc-text">واژه ، موتور جستجوی نویسندگان</p>
-                    <form class="search-box" id="searchBoxHome">
-                        <input type="search" placeholder="جستجو">
-                        <button type="submit" style="background-color: #fff;"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="left">
-                    <img id="ferdowsi" src="../Image/img/ferdowsi.png" alt="ferdowsi pictrue" loading="lazy">
-                    <canvas width="50px" height="300px" id="windowShade" loading="lazy"></canvas>
-                </div>
-            </section>
-        </main>
-
-        <main class="container">
-            <section class="ocean">
-                <div class="right">
-                    <img src="../Image/img/writing.png" alt="a human search word" loading="lazy">
-                </div>
-                <div class="left">
-                    <img src="../Image/img/message.png" alt="beautiful message" loading="lazy">
-                </div>
-            </section>
-        </main>
-
-
-        <main class="container">
-            <main class="downer-bg">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </main>
-        </main>
-
-        <main class="container">
-            <section class="brief">
-                <div class="right">
-                    <h1>با واژه میتونی...</h1>
-                    <p>
-                        خیلی راحت و سریع بین فرهنگ های مختلف
-                        <br>
-                        جستجو کنی و متن بهتری بنویسی
-                    </p>
-                    <div class="knob">
-                        <button id="startSearch">شروع جستجو</button>
-                        <button id="moreInfo">اطلاعات بیشتر</button>
+                    <div class="content">
+                      <h4>افزودن یک بیت شعر</h4>
+                      <p>
+                        با جستجو در مجموعه اشعار عظیم گنجور همیشه یک بیت شعر
+                        مناسب با موضوع شما پیدا میشود.
+                      </p>
                     </div>
-                </div>
-                <div class="left">
-                    <table>
-                        <!-- Row one -->
-                        <tr>
-                            <td>
-                                <div class="description-box">
-                                    <div class="star icon">
-                                        <img src="../Image/icon/star.svg" alt="star icon">
-                                    </div>
-                                    <div class="content">
-                                        <h4>انتخاب بهترین واژه</h4>
-                                        <p>
-                                            استفاده از منابعی چون فرهنگ با بهترین طیفی و واژه‌نامه سره نامه باشید انتخاب
-                                            را
-                                            داشته
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="description-box">
-                                    <div class="quill icon">
-                                        <img src="../Image/icon/quill.svg" alt="Quill icon">
-                                    </div>
-                                    <div class="content">
-                                        <h4>افزودن یک بیت شعر</h4>
-                                        <p>با جستجو در مجموعه اشعار عظیم گنجور همیشه یک بیت شعر مناسب با موضوع شما پیدا
-                                            میشود. </p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Row Two -->
-                        <tr>
-                            <td>
-                                <div class="description-box">
-                                    <div class="cursor icon">
-                                        <img src="../Image/icon/cursor.svg" alt="cursor icon">
-                                    </div>
-                                    <div class="content">
-                                        <h4>اصلاح اشتبات املائی</h4>
-                                        <p>
-                                            استفاده از منابعی چون فرهنگ با بهترین طیفی و واژه‌نامه سره نامه باشید انتخاب
-                                            را
-                                            داشته
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="description-box">
-                                    <div class="update icon">
-                                        <img src="../Image/icon/update.svg" alt="update icon">
-                                    </div>
-                                    <div class="content">
-                                        <h4>جایگزینی واژگان بیگانه</h4>
-                                        <p>
-                                            استفاده از منابعی چون فرهنگ با بهترین طیفی و واژه‌نامه سره نامه باشید انتخاب
-                                            را
-                                            داشته
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-        </main>
-
-        <main class="container">
-            <section class="last-word">
-                <h1>حمایت از واژه</h1>
-                <p>
-                    واژه متن باز منتشر شده و استفاده از آن رایگان است ، شما
-                    <br>
-                    میتوانید از فرایند توسعه واژه حمایت کنید.
-                </p>
-                <div class="knob">
-                    <button id="shareWeb">اشتراک گذاری</button>
-                    <button id="protectUs">
-                        <a id="protectButton" target="_blank" href="https://idpay.ir/protect-word">
-                            حمایت مالی
-                        </a>
-                    </button>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <main class="container">
-                <div class="right">
-                    <p>واژه متن باز است و تمامی حقوق محفوظ</p>
-                </div>
-                <div class="left">
-                    <div class="knob">
-                        <button id="moveToTop">
-                            <i class="fa fa-arrow-up"></i>
-                        </button>
+                  </div>
+                </td>
+              </tr>
+              <!-- Row Two -->
+              <tr>
+                <td>
+                  <div class="description-box">
+                    <div class="cursor icon">
+                      <img src="../Image/icon/cursor.svg" alt="cursor icon" />
                     </div>
-                </div>
-            </main>
-        </footer>
+                    <div class="content">
+                      <h4>اصلاح اشتبات املائی</h4>
+                      <p>
+                        استفاده از منابعی چون فرهنگ با بهترین طیفی و واژه‌نامه
+                        سره نامه باشید انتخاب را داشته
+                      </p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="description-box">
+                    <div class="update icon">
+                      <img src="../Image/icon/update.svg" alt="update icon" />
+                    </div>
+                    <div class="content">
+                      <h4>جایگزینی واژگان بیگانه</h4>
+                      <p>
+                        استفاده از منابعی چون فرهنگ با بهترین طیفی و واژه‌نامه
+                        سره نامه باشید انتخاب را داشته
+                      </p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </main>
 
+      <main class="container">
+        <section class="last-word">
+          <h1>حمایت از واژه</h1>
+          <p>
+            واژه متن باز منتشر شده و استفاده از آن رایگان است ، شما
+            <br />
+            میتوانید از فرایند توسعه واژه حمایت کنید.
+          </p>
+          <div class="knob">
+            <button id="shareWeb">اشتراک گذاری</button>
+            <button id="protectUs">
+              <a
+                id="protectButton"
+                target="_blank"
+                href="https://idpay.ir/protect-word"
+              >
+                حمایت مالی
+              </a>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <main class="container">
+          <div class="right">
+            <p>واژه متن باز است و تمامی حقوق محفوظ</p>
+          </div>
+          <div class="left">
+            <div class="knob">
+              <button id="moveToTop">
+                <i class="fa fa-arrow-up"></i>
+              </button>
+            </div>
+          </div>
+        </main>
+      </footer>
     </main>
 
     <script src="../App/canvas.js"></script>
     <script src="App/script.js"></script>
     <script src="../App/class.js"></script>
     <script src="../App/app.js"></script>
-
-</body>
-
+  </body>
 </html>

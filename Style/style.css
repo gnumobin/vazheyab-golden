@@ -294,6 +294,10 @@ section.social-media i.fab {
   color: black;
 }
 
+.header-container {
+  width: 100%;
+}
+
 ul,
 button,
 img {

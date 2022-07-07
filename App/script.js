@@ -134,6 +134,9 @@ function My_JavaScript() {
   // After Click home button in all menu
   function afterHome(e) {
     transmitter.transfer("../index");
+    if (document.querySelector("header.desktop-header")) {
+      document.querySelector("header.desktop-header").style.display = "none";
+    }
   }
   // After Click search button in all menu
   function afterSearch(e) {
@@ -210,8 +213,8 @@ function My_JavaScript() {
   }
   // After Clicked Edit Website theme (default == go to the dark theme)
   function afterEditTheme() {
-    const body = document.querySelector("body")
-    body.classList.toggle("dark")
+    const body = document.querySelector("body");
+    body.classList.toggle("dark");
   }
   // after clicked in share btn for share link
   function afterShare() {
