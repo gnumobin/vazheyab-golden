@@ -258,9 +258,14 @@ section.social-media i.fab {
   background-color: orangered;
   color: black; }
 
+* {
+  user-select: none; }
+
+.words * {
+  user-select: text !important; }
+
 .header-container {
-  width: 100%;
-}
+  width: 100%; }
 
 ul,
 button,
@@ -345,6 +350,10 @@ details p {
     visibility: hidden; }
   .dark .output * {
     color: #282a36; }
+  .dark .mobile-menu ul {
+    background-color: #333 !important; }
+    .dark .mobile-menu ul * {
+      color: black !important; }
 
 :root {
   --cofee-color: gray; }
