@@ -1,7 +1,7 @@
 :root {
   --cofee-color: gray;
 }
-.loader {
+#loadingSpinner {
   width: 48px;
   height: 40px;
   margin-top: 30px;
@@ -10,7 +10,7 @@
   background: var(--cofee-color);
   border-radius: 15% 15% 35% 35%;
 }
-.loader::after {
+#loadingSpinner::after {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -21,7 +21,7 @@
   height: 20px;
   border-radius: 0 4px 4px 0;
 }
-.loader::before {
+#loadingSpinner::before {
   content: "";
   position: absolute;
   width: 1px;
