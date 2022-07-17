@@ -9,20 +9,17 @@
   <meta name="author" content="مبین قائمی , mobin ghaemi" />
   <meta name="desc" content="غواصی توی دنیا واژه های زیبای فارسی" />
   <meta name="keywords" content="واژه , فارسی , پارسی , فردوسی , مبین قائمی" />
-
-  <meta name="theme-color" content="#fff" />
-
-  <meta name="robots" content="follow" />
-  <meta name="googlebot" content="follow" />
-  <meta name="googlebot-news" content="follow" />
-  <meta name="slurp" content="follow" />
-  <meta name="msnbot" content="follow" />
+  <meta name="description" content="پیدا کردن واژه های اصیل فارسی">
 
   <title>واژه یاب طلایی</title>
 
   <link rel="shortcut icon" href="../Image/img/ferdowsi.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./font-awesome/css/all.css" />
   <link rel="stylesheet" href="./Style/style.css" />
+
+  <script src="../App/canvas.js" defer></script>
+  <script src="App/script.js" defer></script>
+  <script src="../App/class.js" defer></script>
+  <script src="../App/app.js" defer></script>
 </head>
 
 <body id="body" class="">
@@ -140,7 +137,7 @@
           <div class="middle">
             <ul>
               <li>
-                <a id="homeButton">
+                <a class="active" id="homeButton">
                   <i class="fa fa-home"></i>
                   خانه
                 </a>
@@ -196,7 +193,7 @@
           </form>
         </div>
         <div class="left">
-          <img id="ferdowsi" src="../Image/img/ferdowsi.png" alt="ferdowsi pictrue" loading="lazy" />
+          <img id="ferdowsi" src="../Image/img/ferdowsi.png" alt="ferdowsi pictrue" />
           <canvas width="50px" height="300px" id="windowShade" loading="lazy"></canvas>
         </div>
       </section>
@@ -344,11 +341,7 @@
       </main>
     </footer>
   </main>
-
-  <script src="../App/canvas.js"></script>
-  <script src="App/script.js"></script>
-  <script src="../App/class.js"></script>
-  <script src="../App/app.js"></script>
+  
 </body>
 
 </html>
