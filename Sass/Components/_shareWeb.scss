@@ -3,7 +3,7 @@ section.share-website {
   opacity: 0;
 
   background-color: #44475a;
-  width: 50vw;
+  width: max-content !important;
   height: 50vh;
   padding: 1rem;
   transition: 0.5s opacity;

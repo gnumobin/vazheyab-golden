@@ -826,6 +826,10 @@
 .fa-window-close::before {
   content: "\f2d3";
 }
+.fa-bars::before {
+  content: "\f0c9";
+}
+
 /* End Font Awesome Uses */
 
 :root,
