@@ -1,5 +1,10 @@
-# vazheyab-golden
 Please Run With LiveServer :)
 
 ## Result
-<img src="https://github.com/mobin-ghaemi/vazheyab-golden/blob/master/Image/SC.png" alt="Project Result" width="100%"/>
+<img src="./Image/screenshot/home.png" alt="Home Result" width="50%"/>
+<img src="./Image/screenshot/search.png" alt="Search Result" width="50%"/>
+
+<br />
+
+<img src="./Image/screenshot/about.png" alt="About Result" width="50%"/>
+<img src="./Image/screenshot/contact.png" alt="Contact Result" width="50%"/>
