@@ -1,7 +1,7 @@
 Please Run With LiveServer :)
 
 ## Result
-<style>
+<style hidden>
     .float {
         display : flex
     }
@@ -20,6 +20,6 @@ Please Run With LiveServer :)
 
 ### Dark
 
-<img src="./Image/screenshot/dark.png" alt="Dark Result" width="100%"/>
+<img src="./Image/screenshot/dark.png" alt="Dark Result" width="96%"/>
 
 </center>
