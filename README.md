@@ -1,12 +1,8 @@
 Please Run With LiveServer :)
 
-## Result
-<style hidden>
-    .float {
-        display : flex
-    }
-</style>
+#### Website : http://vazheyab-golden.ir/
 
+## Result
 <center>
 <div class="float">
 <img src="./Image/screenshot/home.png" alt="Home Result" width="48%"/>
