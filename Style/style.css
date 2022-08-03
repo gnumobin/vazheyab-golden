@@ -413,6 +413,12 @@ details p {
 .dark .mobile-menu ul * {
   color: black !important;
 }
+.dark .modal {
+  background-color: #44475a !important;
+}
+.dark #openMenu * {
+  background-color: #44475a !important;
+}
 
 :root {
   --cofee-color: gray;

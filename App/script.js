@@ -1,3 +1,5 @@
+
+
 // Variales
 const $ = document;
 
@@ -209,9 +211,21 @@ function My_JavaScript() {
     });
   }
   // After Clicked Edit Website theme (default == go to the dark theme)
+  let themeCount = 0;
   function afterEditTheme() {
+    // Increase ThemeCount
+    themeCount++
+    // Theme 
     const body = document.querySelector("body");
-    body.classList.toggle("dark");
+    // Switch Theme (Light , Dark) With LocalStorage
+
+    if (themeCount % 2 === 0) {
+      localStorage.setItem("theme", "light")
+      body.classList.remove("dark")
+    } else {
+      localStorage.setItem("theme", "dark")
+      body.classList.add("dark")
+    }
   }
   // after clicked in share btn for share link
   function afterShare() {
@@ -266,3 +280,10 @@ function afterShareSection(e) {
     location.assign(whatsApp);
   }
 }
+
+// After Load Page
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("theme")) {
+    $.querySelector("body").classList.add(localStorage.getItem("theme"))
+  }
+})
