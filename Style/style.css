@@ -1,17 +1,86 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, input {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,96 +90,45 @@ time, mark, audio, video, input {
   outline: none;
   text-decoration: none;
 }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
-
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-@font-face {
-  font-family: vazir;
-  src: url("../../Font/webfonts/Vazirmatn-FD-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: vazir;
-  src: url("../../Font/webfonts/Vazirmatn-FD-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: vazir;
-  src: url("../../Font/webfonts/Vazirmatn-FD-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
 }
 @font-face {
   font-family: vazir;
   src: url("../../Font/webfonts/Vazirmatn-FD-Regular.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: vazir;
-  src: url("../../Font/webfonts/Vazirmatn-FD-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: vazir;
-  src: url("../../Font/webfonts/Vazirmatn-FD-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: vazir;
-  src: url("../../Font/webfonts/Vazirmatn-FD-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: vazir;
-  src: url("../../Font/webfonts/Vazirmatn-FD-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: vazir;
-  src: url("../../Font/webfonts/Vazirmatn-FD-Black.woff2") format("woff2");
-  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -122,28 +140,55 @@ table {
   --light-mobile-menu-color: #ecf0f1;
   --light-mobile-menu-color: #333;
 }
-
-section.who-iam, section.what-word, .follow-me .left, .follow-me, section.search-sec div.helper, footer > .container, section.brief, section.ocean, section.welcome, header nav ul, header nav, .mobile-header .float, section.share-website .float, section.social-media div.rect div.blue {
+section.who-iam,
+section.what-word,
+.follow-me .left,
+.follow-me,
+section.search-sec div.helper,
+footer > .container,
+section.brief,
+section.ocean,
+section.welcome,
+header nav ul,
+header nav,
+.mobile-header .float,
+section.share-website .float,
+section.social-media div.rect div.blue {
   display: flex;
   justify-content: space-between;
 }
-section.who-iam > div, section.what-word > div, .follow-me .left > div, .follow-me > div, section.search-sec div.helper > div, footer > .container > div, section.brief > div, section.ocean > div, section.welcome > div, header nav ul > div, header nav > div, .mobile-header .float > div, section.share-website .float > div, section.social-media div.rect div.blue > div {
+section.who-iam > div,
+section.what-word > div,
+.follow-me .left > div,
+.follow-me > div,
+section.search-sec div.helper > div,
+footer > .container > div,
+section.brief > div,
+section.ocean > div,
+section.welcome > div,
+header nav ul > div,
+header nav > div,
+.mobile-header .float > div,
+section.share-website .float > div,
+section.social-media div.rect div.blue > div {
   display: grid;
   justify-content: center;
 }
-
-section.who-iam > *, section.what-word > *, section.brief > *, section.ocean > *, section.welcome > * {
+section.who-iam > *,
+section.what-word > *,
+section.brief > *,
+section.ocean > *,
+section.welcome > * {
   width: 50%;
 }
-
-section.brief > div.right, section.welcome > div.right {
+section.brief > div.right,
+section.welcome > div.right {
   display: flex;
   flex-direction: column;
   justify-content: initial;
   align-items: initial;
   gap: 3rem;
 }
-
 .search-box {
   position: relative;
 }
@@ -154,7 +199,7 @@ section.brief > div.right, section.welcome > div.right {
   border-radius: 25px;
   background-color: #ced9e3;
 }
-.search-box button[type=submit] {
+.search-box button[type="submit"] {
   all: unset;
   position: absolute;
   left: 17%;
@@ -162,36 +207,39 @@ section.brief > div.right, section.welcome > div.right {
   cursor: pointer;
   background: rgba(0, 0, 0, 0) !important;
 }
-
 button {
   padding: 0.9rem 1.8rem;
   border: none;
   border-radius: 18px;
   font-size: 1.2rem;
 }
-
-section.send-email form button[type=submit], section.last-word div.knob button:nth-child(1), section.brief > div.right button:nth-child(1), #not-found-container div.knob button:nth-child(2) {
+section.send-email form button[type="submit"],
+section.last-word div.knob button:nth-child(1),
+section.brief > div.right button:nth-child(1),
+#not-found-container div.knob button:nth-child(2) {
   background-color: #1cb0f6;
   box-shadow: 0px 5px 0px #099ee3;
   color: white;
 }
-
-section.search-sec div.helper > div.left div.knob button, section.last-word div.knob button:nth-child(2), section.brief > div.right button:nth-child(2), #not-found-container div.knob button:nth-child(1) {
+section.search-sec div.helper > div.left div.knob button,
+section.last-word div.knob button:nth-child(2),
+section.brief > div.right button:nth-child(2),
+#not-found-container div.knob button:nth-child(1) {
   background-color: #f1f4f7;
   box-shadow: 0px 5px 0px #ced9e3;
 }
-
-section.search-sec div.helper > div.left div.knob button, section.last-word div.knob button:nth-child(2), section.brief > div.right button:nth-child(2), #not-found-container div.knob button:nth-child(1) {
+section.search-sec div.helper > div.left div.knob button,
+section.last-word div.knob button:nth-child(2),
+section.brief > div.right button:nth-child(2),
+#not-found-container div.knob button:nth-child(1) {
   background-color: #f1f4f7;
   box-shadow: 0px 5px 0px #ced9e3;
 }
-
 footer > .container > div.left div.knob button {
   background: #273645;
   box-shadow: 0px 4.3067px 0px #1a242d;
   color: snow;
 }
-
 section.brief > div.left div.description-box {
   position: relative;
   border: 3px solid #ced9e3;
@@ -236,7 +284,6 @@ section.brief > div.left div.description-box div.content > p {
   font-size: 0.9rem;
   opacity: 0.75;
 }
-
 section.social-media div.rect {
   position: relative;
 }
@@ -287,25 +334,20 @@ section.social-media i.fab {
   border-radius: 16px;
   font-size: 2rem;
 }
-
 ::selection,
 ::-moz-selection {
   background-color: orangered;
   color: black;
 }
-
 * {
   user-select: none;
 }
-
 .words * {
   user-select: text !important;
 }
-
 .header-container {
   width: 100%;
 }
-
 ul,
 button,
 img {
@@ -314,17 +356,14 @@ img {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-
 .container {
   max-width: 1280px;
   padding: 0 2rem;
   margin: auto;
 }
-
 html {
   direction: rtl;
 }
-
 body {
   font-family: vazir;
   display: flex;
@@ -333,48 +372,40 @@ body {
   align-items: stretch;
   background: var(--light-bg-color);
 }
-
 * {
   color: var(--light-font-color);
   font-size: 100%;
   font-family: inherit;
   box-sizing: border-box;
 }
-
 h1 {
   font-size: 4rem;
   font-weight: 900;
   line-height: 1.15;
 }
-
 h2 {
   font-size: 3rem;
   font-weight: 900;
   line-height: 1.15;
 }
-
 h4 {
   font-size: 1.4rem;
   line-height: 34.38px;
   font-weight: 400;
 }
-
 h5 {
   font-size: 1.2rem;
   line-height: 34.38px;
   text-align: center;
 }
-
 button {
   cursor: pointer;
 }
-
 strong {
   font-weight: 900;
   font-size: 1.2rem;
   list-style: 28px;
 }
-
 details summary {
   cursor: pointer;
   padding: 1rem;
@@ -386,7 +417,6 @@ details p {
   color: teal;
   opacity: 1;
 }
-
 .dark {
   background-color: #282a36;
   color: #f8f8f2;
@@ -394,7 +424,8 @@ details p {
 .dark * {
   color: #f8f8f2;
 }
-.dark input, .dark textarea {
+.dark input,
+.dark textarea {
   background-color: #44475a;
   color: black;
 }
@@ -419,11 +450,9 @@ details p {
 .dark #openMenu * {
   background-color: #44475a !important;
 }
-
 :root {
   --cofee-color: gray;
 }
-
 #loadingSpinner {
   width: 48px;
   height: 40px;
@@ -433,7 +462,6 @@ details p {
   background: var(--cofee-color);
   border-radius: 15% 15% 35% 35%;
 }
-
 #loadingSpinner::after {
   content: "";
   box-sizing: border-box;
@@ -445,7 +473,6 @@ details p {
   height: 20px;
   border-radius: 0 4px 4px 0;
 }
-
 #loadingSpinner::before {
   content: "";
   position: absolute;
@@ -457,16 +484,18 @@ details p {
   box-sizing: border-box;
   animation: animloader 1s ease infinite;
 }
-
 @keyframes animloader {
   0% {
-    box-shadow: 2px 0px rgba(255, 0, 0, 0), 12px 0px rgb(150, 150, 150), 20px 0px rgba(255, 255, 255, 0);
+    box-shadow: 2px 0px rgba(255, 0, 0, 0), 12px 0px rgb(150, 150, 150),
+      20px 0px rgba(255, 255, 255, 0);
   }
   50% {
-    box-shadow: 2px -5px rgba(150, 150, 150, 0.5), 12px -3px rgba(150, 150, 150, 0.5), 20px -2px rgba(150, 150, 150, 0.6);
+    box-shadow: 2px -5px rgba(150, 150, 150, 0.5),
+      12px -3px rgba(150, 150, 150, 0.5), 20px -2px rgba(150, 150, 150, 0.6);
   }
   100% {
-    box-shadow: 2px -8px rgba(150, 150, 150, 0), 12px -5px rgba(150, 150, 150, 0), 20px -5px rgba(150, 150, 150, 0);
+    box-shadow: 2px -8px rgba(150, 150, 150, 0),
+      12px -5px rgba(150, 150, 150, 0), 20px -5px rgba(150, 150, 150, 0);
   }
 }
 section.share-website {
@@ -529,7 +558,6 @@ section.share-website i {
 section.share-website i:hover {
   transform: scale(1.5);
 }
-
 #not-found-container {
   display: flex;
 }
@@ -544,7 +572,10 @@ section.share-website i:hover {
   display: flex;
   justify-content: center;
 }
-#not-found-container > .container:nth-child(1) .top-background .blue-background {
+#not-found-container
+  > .container:nth-child(1)
+  .top-background
+  .blue-background {
   position: absolute;
   z-index: -1;
   background-color: #1cb0f6;
@@ -578,7 +609,6 @@ section.share-website i:hover {
   color: #2e4051;
   opacity: 0.75;
 }
-
 .modal {
   pointer-events: none;
   position: fixed;
@@ -589,18 +619,19 @@ section.share-website i:hover {
   border-radius: 0.5rem;
   background-color: rgb(255, 255, 255);
   opacity: 0;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 9999;
   width: 70%;
 }
-
 .modal .modal-inner {
   padding: 1rem;
 }
-
 @media only screen and (max-width: 980px) {
   .modal {
     width: 80%;
@@ -616,7 +647,6 @@ section.share-website i:hover {
   transform: translate(50%, -50%) scaleX(1) scaleY(1);
   opacity: 1;
 }
-
 .overlay {
   pointer-events: none;
   position: fixed;
@@ -634,12 +664,10 @@ section.share-website i:hover {
   padding: 0 !important;
   z-index: 9998;
 }
-
 .overlay.active {
   pointer-events: auto;
   opacity: 1;
 }
-
 .close-modal-btn {
   position: absolute;
   top: 1rem;
@@ -649,23 +677,19 @@ section.share-website i:hover {
   cursor: pointer;
   overflow: hidden;
 }
-
 .close-modal-btn::before {
   content: "×";
   transition: transform ease 250ms;
   display: inline-block;
 }
-
 .close-modal-btn:hover::before {
   transform: rotate(90deg);
 }
-
 .modal h1 {
   font-size: 1.6rem;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
-
 .mobile-header {
   display: none;
 }
@@ -739,7 +763,6 @@ section.share-website i:hover {
   width: 80%;
   display: inline-block;
 }
-
 header i {
   margin-left: 0.4rem;
   color: rgba(0, 0, 0, 0.5);
@@ -773,7 +796,6 @@ header button#themeEditor i {
   top: 8px;
   left: 3px;
 }
-
 section.welcome {
   align-items: center;
 }
@@ -800,7 +822,6 @@ section.welcome .search-box {
 section.welcome .search-box button {
   left: 33%;
 }
-
 section.ocean {
   align-items: flex-end;
 }
@@ -817,7 +838,6 @@ section.ocean img {
 section.ocean > div.left {
   padding-top: 10rem;
 }
-
 section.brief {
   align-items: center;
   margin-top: 8rem;
@@ -853,7 +873,6 @@ section.brief > div.left div.icon.update {
   background-color: #cb7cff;
   border: 3px solid #c164ff;
 }
-
 section.last-word {
   display: flex;
   flex-direction: column;
@@ -884,7 +903,6 @@ footer::before {
   z-index: -1;
   border-radius: 30px 50px 0px 0px;
 }
-
 footer {
   position: relative;
   max-width: 1360px;
@@ -939,7 +957,6 @@ footer > .container * {
 .downer-bg > div:nth-child(9) {
   background-color: yellow;
 }
-
 .active {
   color: #1cb0f6;
   opacity: 1;
@@ -947,7 +964,6 @@ footer > .container * {
 .active i {
   color: #1cb0f6;
 }
-
 section.search-sec {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -970,7 +986,6 @@ section.search-sec .search-box-parent .search-box {
   display: flex;
   justify-content: center;
 }
-
 section.result {
   border: 3px solid #ced9e3;
   box-shadow: 0px 2px 0px #ced9e3;
@@ -1049,14 +1064,12 @@ section.result .output .grid #vector {
   top: 0;
   right: -5px;
 }
-
 section.social-media {
   margin: 7rem 0;
 }
 section.social-media * {
   color: white !important;
 }
-
 .follow-me {
   padding: 1rem;
   align-items: center;
@@ -1080,7 +1093,6 @@ section.social-media * {
   color: #e84393;
   opacity: 0.9;
 }
-
 #loadingSpinner {
   display: none;
 }
@@ -1121,7 +1133,6 @@ section.social-media * {
 #loadingSpinner h5 {
   color: rgba(255, 20, 145, 0.7);
 }
-
 :is(section.what-word, section.who-iam) p > strong {
   display: inline-block;
   padding: 1rem 0;
@@ -1134,7 +1145,6 @@ section.social-media * {
 :is(section.what-word, section.who-iam) p.who-iam-desc {
   text-align: justify;
 }
-
 section.what-word {
   align-items: center;
   padding: 2rem 4rem;
@@ -1142,7 +1152,6 @@ section.what-word {
 section.what-word img {
   width: 90%;
 }
-
 section.who-iam {
   align-items: center;
   margin: 12rem 0 0;
@@ -1167,7 +1176,6 @@ section.who-iam div.rect .img-parent {
 section.who-iam div.rect .img-parent img#author {
   width: 80%;
 }
-
 .scattered-monochrome {
   position: relative;
   z-index: -2;
@@ -1183,7 +1191,6 @@ section.who-iam div.rect .img-parent img#author {
   filter: blur(150px);
   transform: rotate(53.79deg);
 }
-
 .fixed-wave-bg {
   position: relative;
 }
@@ -1197,7 +1204,6 @@ section.who-iam div.rect .img-parent img#author {
   background-repeat: no-repeat;
   background-position: center bottom;
 }
-
 section.send-email {
   margin-top: 5rem;
   margin-bottom: 3rem;
@@ -1219,7 +1225,7 @@ section.send-email form textarea {
   width: 100%;
   padding: 0.5rem;
 }
-section.send-email form button[type=submit] {
+section.send-email form button[type="submit"] {
   width: 100%;
 }
 section.send-email > .left {
@@ -1229,49 +1235,42 @@ section.send-email > .left {
   align-items: initial;
   gap: 5rem;
 }
-section.send-email > .left i.fa, section.send-email > .left i.fab {
+section.send-email > .left i.fa,
+section.send-email > .left i.fab {
   padding: 0.3rem 0.5rem;
 }
 section.send-email > .left p.title > * {
   margin-bottom: 1rem;
 }
-
 .desktop-header li:hover * {
   color: #1cb0f6;
   opacity: 1 !important;
 }
-
 button {
   transition: 0.09s box-shadow;
 }
-
 button:hover {
   box-shadow: 0 0 0 0 black !important;
 }
-
 button#themeEditor:hover {
   background-color: rgba(30, 42, 53, 0.7254901961);
 }
 button#themeEditor:hover * {
   color: rgb(190, 190, 190);
 }
-
 .follow-me i.fab:hover {
   opacity: 1;
   color: white;
   background-color: #e84393;
 }
-
 a:hover {
   cursor: pointer;
 }
-
 summary:hover {
   transition: 0.3s;
   opacity: 1;
   border: 1px solid deeppink !important;
 }
-
 @media screen and (max-width: 1024px) {
   .follow-me .middle {
     width: 40%;
@@ -1342,7 +1341,7 @@ summary:hover {
   .search-box input {
     width: 100%;
   }
-  .search-box button[type=submit] {
+  .search-box button[type="submit"] {
     all: unset;
     position: static;
     cursor: pointer;
@@ -1352,8 +1351,8 @@ summary:hover {
     border-radius: 50px;
   }
   section.ocean,
-canvas#windowShade,
-.downer-bg {
+  canvas#windowShade,
+  .downer-bg {
     display: none;
   }
   button {
@@ -1367,7 +1366,7 @@ canvas#windowShade,
     text-align: center;
   }
   section.brief table td,
-section.brief table tr {
+  section.brief table tr {
     display: block;
     padding: 1.2rem 0 !important;
   }
@@ -1392,7 +1391,7 @@ section.brief table tr {
   .search-page-searchBox i.fa {
     left: 5% !important;
   }
-  .search-page-searchBox button[type=submit] {
+  .search-page-searchBox button[type="submit"] {
     all: unset;
     cursor: pointer;
     padding: 1rem;
@@ -1521,5 +1520,3 @@ section.brief table tr {
     font-size: 1rem !important;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
