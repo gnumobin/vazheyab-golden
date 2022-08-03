@@ -39,33 +39,34 @@ function My_JavaScript() {
 
     // * Desktop
     // after click the home button
-    desktopHomeBtn.addEventListener("click", afterHome);
+    if (desktopHomeBtn) desktopHomeBtn.addEventListener("click", afterHome);
     // After Click the search button
-    desktopSearchBtn.addEventListener("click", afterSearch);
+    if (desktopSearchBtn) desktopSearchBtn.addEventListener("click", afterSearch);
     // after click the about button
-    desktopAboutBtn.addEventListener("click", afterAbout);
+    if (desktopAboutBtn) desktopAboutBtn.addEventListener("click", afterAbout);
     // After Click the contact button
-    desktopContactBtn.addEventListener("click", afterContact);
-    // * End Desltop
+    if (desktopContactBtn) desktopContactBtn.addEventListener("click", afterContact);
+    // * End Desktop
 
     // ? Mobile
     // after click the home button
-    mobileHomeBtn.addEventListener("click", afterHome);
+    if (mobileHomeBtn) mobileHomeBtn.addEventListener("click", afterHome);
     // After Click the search button
-    mobileSearchBtn.addEventListener("click", afterSearch);
+    if (mobileSearchBtn) mobileSearchBtn.addEventListener("click", afterSearch);
     // after click the about button
-    mobileAboutBtn.addEventListener("click", afterAbout);
+    if (mobileAboutBtn) mobileAboutBtn.addEventListener("click", afterAbout);
     // After Click the contact button
-    mobileContactBtn.addEventListener("click", afterContact);
+    if (mobileContactBtn) mobileContactBtn.addEventListener("click", afterContact);
     // ? End Mobile
+
 
     // ! end codes for menu and header button
 
     //* Menu Events
     // Open The mobile menu #CALL
-    openMenuBtn.addEventListener("click", afterOpenMenu);
+    if (openMenuBtn) openMenuBtn.addEventListener("click", afterOpenMenu);
     // Close the mobile menu #CALL
-    closeMenuBtn.addEventListener("click", afterCloseMenu);
+    if (closeMenuBtn) closeMenuBtn.addEventListener("click", afterCloseMenu);
     //* End Menu Events
 
     // *
@@ -82,7 +83,7 @@ function My_JavaScript() {
       scrollToUpBtn.addEventListener("click", afterScroll);
     }
     // Edit Website Theme
-    themeEditBtn.addEventListener("click", afterEditTheme);
+    if (themeEditBtn) themeEditBtn.addEventListener("click", afterEditTheme);
     if (mobileThemeEditBtn) {
       mobileThemeEditBtn.addEventListener("click", afterEditTheme);
     }
@@ -182,6 +183,7 @@ function My_JavaScript() {
 
   // After Click home button in all menu
   function afterAbout(e) {
+    document.querySelector("#switchSpinner").style.display = "flex"
     transmitter.transfer("about");
   }
   // After Click search button in all menu

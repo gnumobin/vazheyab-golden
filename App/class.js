@@ -3,13 +3,13 @@ class Transmitter {
   constructor(container) {
     this.container = document.querySelector("#switcherContainer");
   }
-  transfer(pageAddress) {
-    return fetch(`../Page/${pageAddress}.html`)
-      .then((response) => response.text())
-      .then((response) => {
-        this.container.innerHTML = response;
-        My_JavaScript();
-      });
+  async transfer(pageAddress) {
+    document.querySelector("#switchSpinner").style.display = "flex"
+    const response = await fetch(`../Page/${pageAddress}.html`);
+    const response_1 = await response.text();
+    this.container.innerHTML = response_1;
+    document.querySelector("#switchSpinner").style.display = "none"
+    My_JavaScript();
   }
 }
 
@@ -20,7 +20,7 @@ class API {
     const token = "259616:624de36222e8d8.34731341";
     const url = `https://one-api.ir/dictionary/?token=${token}&action=dehkhoda&q=${query}`;
 
-    fetch(url,{method : "GET"})
+    fetch(url, { method: "GET" })
       .then((response) => response.json())
       .then((response) => {
         this.addContent(response, spinner);
