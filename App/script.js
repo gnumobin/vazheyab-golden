@@ -147,7 +147,7 @@ function My_JavaScript() {
   // init search form when search page initialized
   let counter = 0;
   function initForm() {
-    $.querySelector(".search-box").addEventListener("submit", (e) => {
+    document.querySelector(".search-box").addEventListener("submit", (e) => {
       e.preventDefault();
 
       counter++;

@@ -5,7 +5,7 @@ class Transmitter {
   }
   async transfer(pageAddress) {
     document.querySelector("#switchSpinner").style.display = "flex"
-    const response = await fetch(`../Page/${pageAddress}.html`);
+    const response = await fetch(`Page/${pageAddress}.html`);
     const response_1 = await response.text();
     this.container.innerHTML = response_1;
     document.querySelector("#switchSpinner").style.display = "none"
